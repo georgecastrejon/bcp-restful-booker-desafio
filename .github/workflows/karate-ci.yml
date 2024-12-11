@@ -1,0 +1,30 @@
+name: Karate CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-karate-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+
+      - name: Install dependencies
+        run: mvn install -DskipTests
+
+      - name: Run Karate tests
+        run: mvn clean test
+
+      - name: Upload Karate Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: karate-reports
+          path: target/karate-reports/
