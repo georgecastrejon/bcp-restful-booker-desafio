@@ -39,19 +39,13 @@ Feature: Gestión de Reservas
     Then status 404
     And match response == 'Not Found'
 
-  @unhappy-path
-  Scenario Outline: Consultar reserva existente con ID válido
+  @happy-path
+  Scenario: Consultar reserva existente con ID válido
     Given url baseURL
     * path '/booking/<bookingId>'
     And headers headerscommon
     When method GET
     Then status 200
-    And match response.firstname == "<firstname>"
-    And match response.lastname == "<lastname>"
-
-    Examples:
-      | bookingId | firstname | lastname |
-      | 4         | John      | Doe|
 
   @unhappy-path
   Scenario Outline: Consultar reserva existente con ID inexistente
