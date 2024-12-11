@@ -40,12 +40,16 @@ Feature: Gestión de Reservas
     And match response == 'Not Found'
 
   @happy-path
-  Scenario: Consultar reserva existente con ID válido
+  Scenario Outline: Consultar reserva existente con ID válido
     Given url baseURL
     * path '/booking/<bookingId>'
     And headers headerscommon
     When method GET
     Then status 200
+
+    Examples:
+      | bookingId |
+      | 8         |
 
   @unhappy-path
   Scenario Outline: Consultar reserva existente con ID inexistente
