@@ -9,7 +9,7 @@ class RunAuthTest {
 
     @Karate.Test
     Karate testAuth() {
-        return Karate.run("features/auth").relativeTo(getClass());
+        return Karate.run("features/auth.feature").relativeTo(getClass());
     }
 
     @BeforeAll

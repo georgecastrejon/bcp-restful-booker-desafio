@@ -28,7 +28,7 @@ Feature: Autenticación API
     And request {username: "<username>", password: "<password>"}
     When method POST
     Then status <status_code>
-    #* print response
+    * print response
     And match response.reason == "<error_message>"
 
     Examples:
