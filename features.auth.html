@@ -19,7 +19,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.identify("0da0b561-1d91-4f59-948a-7695164cd317",{name:"runner"});
+    posthog.identify("e1af64d4-d835-4893-b67b-81ed8d81c569",{name:"runner"});
     posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
   }
 });
@@ -45,22 +45,22 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-12-11 05:53:51 AM</div>
+    <div>2024-12-11 09:24:54 PM</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Credenciales válidas generan un token exitosamente</span></a>
+            <a href="#[1.1:25]"><span>[1.1:25]</span> <span>Credenciales válidas generan un token exitosamente</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2.1:36]"><span>[2.1:36]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
+            <a href="#[2.1:38]"><span>[2.1:38]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2.2:37]"><span>[2.2:37]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
+            <a href="#[2.2:39]"><span>[2.2:39]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2.3:38]"><span>[2.3:38]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
+            <a href="#[2.3:40]"><span>[2.3:40]</span> <span>Prueba de autenticación con credenciales incorrectas o campos faltantes</span></a>
           </div>
         </div>
       </div>
@@ -71,60 +71,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-label">Feature:</span>
           <span class="feature-path">features/auth.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Autenticación API</span>
-          <span class="feature-description"></span>
+          <span class="feature-description">Como usuario del sistema,
+  quiero probar el servicio de autenticación
+  Para probar los escenarios happy path y unhappy path .</span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1.1:22]">
+          <div class="scenario-heading" id="[1.1:25]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">happy-path</a>
+                <a class="badge badge-primary" href="karate-tags.html">get_token</a><a class="badge badge-primary" href="karate-tags.html">happy-path</a><a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1.1:22]</span>
+                Scenario: <span>[1.1:25]</span>
                 <span class="scenario-name">Credenciales válidas generan un token exitosamente</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>654</span>
+              <span>ms:</span>&nbsp;<span>807</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1.1:22]bg">
+            <div class="step-container" id="[1.1:25]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1.1:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">145</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.1:22]bg"><div>
+          <div data-parent="[1.1:25]bg"><div>
   
 
   
@@ -134,63 +108,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def baseURL = config.baseURL</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authData = {username: &quot;admin&quot;, password: &quot;password123&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">43</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseURL</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -218,10 +164,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
+        <span>*</span>&nbsp;<span>def authData = {username: &quot;admin&quot;, password: &quot;password123&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">35</div>
   </div>
 
    
@@ -246,10 +192,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request authData</span>
+        <span>Given</span>&nbsp;<span>url baseURL</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -274,10 +220,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
+        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">457</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -302,7 +248,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>request authData</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -330,10 +276,94 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">713</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -350,36 +380,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2.1:36]">
+          <div class="scenario-heading" id="[2.1:38]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a>
+                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a><a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2.1:36]</span>
+                Scenario: <span>[2.1:38]</span>
                 <span class="scenario-name">Prueba de autenticación con credenciales incorrectas o campos faltantes</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>40</span>
+              <span>ms:</span>&nbsp;<span>314</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2.1:36]bg">
+            <div class="step-container" id="[2.1:38]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2.1:36]bg"><div>
+          <div data-parent="[2.1:38]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="1.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
@@ -400,14 +430,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2.1:36]bg"><div>
+          <div data-parent="[2.1:38]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="1.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def baseURL = config.baseURL</span>
@@ -434,8 +464,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="1.26">
-      <div class="step-ref passed">26</div>
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url baseURL</span>
@@ -462,95 +492,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="1.27">
-      <div class="step-ref passed">27</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.28">
-      <div class="step-ref passed">28</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {username: &quot;incorrectUser&quot;, password: &quot;wrongPass&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.29">
-      <div class="step-ref passed">29</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">29</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="1.30">
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -578,10 +524,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print response</span>
+        <span>And</span>&nbsp;<span>request {username: &quot;incorrectUser&quot;, password: &quot;wrongPass&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -590,11 +536,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.31">05:53:51.274 [print] {
-  &quot;reason&quot;: &quot;Bad credentials&quot;
-}
- 
-</div>   
+     
 
   
 
@@ -608,6 +550,62 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="1.32">
       <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">308</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.reason == &quot;Bad credentials&quot;</span>
@@ -630,57 +628,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2.2:37]">
+          <div class="scenario-heading" id="[2.2:39]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a>
+                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a><a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2.2:37]</span>
+                Scenario: <span>[2.2:39]</span>
                 <span class="scenario-name">Prueba de autenticación con credenciales incorrectas o campos faltantes</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>26</span>
+              <span>ms:</span>&nbsp;<span>303</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2.2:37]bg">
+            <div class="step-container" id="[2.2:39]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2.2:37]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.2:37]bg"><div>
+          <div data-parent="[2.2:39]bg"><div>
   
 
   
@@ -690,91 +660,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.2:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def baseURL = config.baseURL</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.26">
-      <div class="step-ref passed">26</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseURL</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.27">
-      <div class="step-ref passed">27</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.28">
-      <div class="step-ref passed">28</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {username: &quot;&quot;, password: &quot;wrongPass&quot;}</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -802,10 +716,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
+        <span>Given</span>&nbsp;<span>url baseURL</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -830,7 +744,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -858,39 +772,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.31">05:53:51.309 [print] {
-  &quot;reason&quot;: &quot;Bad credentials&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.32">
-      <div class="step-ref passed">32</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.reason == &quot;Bad credentials&quot;</span>
+        <span>And</span>&nbsp;<span>request {username: &quot;&quot;, password: &quot;wrongPass&quot;}</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -908,38 +790,122 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.3:38]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.3:38]</span>
-                <span class="scenario-name">Prueba de autenticación con credenciales incorrectas o campos faltantes</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>30</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.3:38]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.3:38]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="3.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">300</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.reason == &quot;Bad credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.3:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">unhappy-path</a><a class="badge badge-primary" href="karate-tags.html">smokeTest</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.3:40]</span>
+                <span class="scenario-name">Prueba de autenticación con credenciales incorrectas o campos faltantes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>286</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.3:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.3:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def config = karate.call(&#39;classpath:config.js&#39;)</span>
@@ -960,101 +926,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2.3:38]bg"><div>
+          <div data-parent="[2.3:40]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="3.8">
-      <div class="step-ref bg-step">8</div>
+    <div class="step-container" id="3.9">
+      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def baseURL = config.baseURL</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.26">
-      <div class="step-ref passed">26</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseURL</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.27">
-      <div class="step-ref passed">27</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.28">
-      <div class="step-ref passed">28</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {username: &quot;incorrectUser&quot;, password: &quot;&quot;}</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1082,10 +964,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
+        <span>Given</span>&nbsp;<span>url baseURL</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1110,7 +992,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>*</span>&nbsp;<span>path &#39;/auth&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1138,10 +1020,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print response</span>
+        <span>And</span>&nbsp;<span>request {username: &quot;incorrectUser&quot;, password: &quot;&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1150,11 +1032,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.31">05:53:51.347 [print] {
-  &quot;reason&quot;: &quot;Bad credentials&quot;
-}
- 
-</div>   
+     
 
   
 
@@ -1170,10 +1048,66 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">32</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.reason == &quot;Bad credentials&quot;</span>
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">283</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.reason == &quot;Bad credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
