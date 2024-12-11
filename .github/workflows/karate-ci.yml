@@ -36,8 +36,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./target/surefire-reports
-          branch: master
+          publish_dir: ./target/karate-reports
+          publish_branch: gh-pages
 
       - name: Show GitHub Pages URL
         run: |
