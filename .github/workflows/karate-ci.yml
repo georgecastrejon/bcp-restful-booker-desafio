@@ -28,3 +28,14 @@ jobs:
         with:
           name: karate-reports
           path: target/karate-reports/
+
+      - name: Deploy report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target/karate-reports
+
+      - name: Show report location in GitHub Pages
+        run: |
+          REPO_URL="https://<username>.github.io/<repo-name>/karate-reports/index.html"
+          echo "Karate reports are available at: $REPO_URL"
