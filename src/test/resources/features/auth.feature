@@ -1,13 +1,15 @@
+@smokeTest
 Feature: Autenticación API
-  #Como usuario
-  #Quiero probar el servicio de autenticación
-  #Para probar los escenarios happy path y unhappy path .
+  Como usuario del sistema,
+  quiero probar el servicio de autenticación
+  Para probar los escenarios happy path y unhappy path .
 
   Background:
     * def config = karate.call('classpath:config.js')
     * def baseURL = config.baseURL
 
   @happy-path
+  @get_token
   Scenario Outline: Credenciales válidas generan un token exitosamente
     * def authData = {username: "<username>", password: "<password>"}
     Given url baseURL
@@ -16,6 +18,7 @@ Feature: Autenticación API
     When method POST
     Then status <status>
     And match response.token == '#notnull'
+    * def accessToken = response.token
 
     Examples:
       | username | password    | status |
@@ -28,7 +31,6 @@ Feature: Autenticación API
     And request {username: "<username>", password: "<password>"}
     When method POST
     Then status <status_code>
-    * print response
     And match response.reason == "<error_message>"
 
     Examples:
