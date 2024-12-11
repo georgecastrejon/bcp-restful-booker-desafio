@@ -39,6 +39,6 @@ jobs:
           publish_dir: ./target/karate-reports
           publish_branch: gh-pages
 
-      - name: Show GitHub Pages URL
+      - name: Show GitHub Pages URL Summary
         run: |
-            echo "Your GitHub Pages site is live at: https://${{ github.repository_owner }}.github.io/${{ github.repository }}"
+          echo "Your GitHub Pages site is live at: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/karate-summary.html"
